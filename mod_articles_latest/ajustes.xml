@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="params">
+        <fieldset name="basic">
+
+<field name="widthchoosen" type="text" default="360" label="WIDTH_IMAGE" description="WIDTH_IMAGE_DESC" />
+<field name="heightchoosen" type="text" default="240" label="HEIGHT_IMAGE" description="HEIGHT_IMAGE_DESC" />
+<field name="cropchoosen" type="list" default="4:3" label="CROP_PROPORTION" description="CROP_PROPORTION_DESC">
+        <option value="16:9">16:9</option>
+        <option value="9:16">9:16</option>
+        <option value="21:9">21:9</option>
+        <option value="9:21">9:21</option>
+        <option value="2:1">2:1</option>
+        <option value="1:2">1:2</option>
+        <option value="2:1">3:1</option>
+        <option value="1:2">1:3</option>
+        <option value="4:3">4:3</option>
+        <option value="3:4">3:4</option>
+        <option value="3:4">1:1</option>
+        </field>
+<field name="items_in_row" type="list" default="4" label="ITEMS_IN_ROW" description="ITEMS_IN_ROW_DESC">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        </field>
+
+<field name="default_image" type="media" default="" label="DEFAULT_IMAGE" description="DEFAULT_IMAGE_DESC" />
+
+<field name="max_limit" type="text" default="144" label="TEXT_LIMIT" description="TEXT_LIMIT_DESC" />
+<field name="show_title" type="list" default="1" label="SHOW_TITLE" description="SHOW_TITLE_DESC">
+        <option value="0">JNO</option>
+        <option value="1">JYES</option>
+        </field>
+
+    </fieldset>
+</fields>
+
+</form>
