@@ -5,7 +5,9 @@ This module override have the following features and possibilities:
 
 - width and height of thumbnails
 - crop proportion
-- title of the article
+- title, date and category of the article
+- trimming introtext based on characters counting
 - number of articles per row
-- thumbnails creation with cache Joomla default folder
+- custom default image
+- thumbnails creation with cache Joomla default folder. The sequence is: intro-text-image, full-text-image, any first image in content, custom image.
 - responsive
