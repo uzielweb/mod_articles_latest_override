@@ -17,14 +17,14 @@ $maxLimit = $params->get('max_limit', '144');
 $items_in_row = $params->get('items_in_row', '4');
 $show_title = $params->get('show_title', '1')
 ?>
-
-  <?php foreach ($list as $i=>$item) :  ?>
-    <?php if (($i % $items_in_row) == '0') :?>
-    <div class="mynews">
+   <div class="mynews">
    <ul class="latestnews<?php echo $moduleclass_sfx; ?>">
-  <?php endif;?>
-  <li class="col-md-3 span3 uk-scrollspy-init-inview uk-scrollspy-inview uk-animation-scale-up" itemscope itemtype="https://schema.org/Article">
-      
+  <?php foreach ($list as $i=>$item) :  ?>
+
+
+
+  <li style="width:<?php echo (100/$items_in_row).'%';?>; float:left;" class="uk-scrollspy-init-inview uk-scrollspy-inview uk-animation-scale-up" itemscope itemtype="https://schema.org/Article">
+     <div class="inner_news" style="padding: 5px;">
     <div class="image_related_news col-md-12 span12">
 <?php
 
@@ -100,9 +100,11 @@ $thumbsnippet = $tpath.'html/mod_'.$module->name.'/assets/smart/image.php?width=
    
 
 
-
+     </div>
   </li>
-  <?php if (($i % $items_in_row) == '3') :?>
-    </ul></div>
- <?php endif;?>
+   <?php if (($i % $items_in_row) == '3') :?>
+   <div class="clearfix"></div>
+   <?php endif; ?>
+
   <?php endforeach; ?>
+  </ul></div>
